@@ -1,5 +1,7 @@
+#include <iostream>
+
 int position
-int index
+int index = 0
 int trackLength
 
 init(int id, int trackLength);
@@ -8,7 +10,7 @@ void advance(int HorseNum, int horses[]) {
 	horses[HorseNum] =+ coin;
 
 
-}
+};
 
 
 void printLane(int HorseNum, int horses[]) {

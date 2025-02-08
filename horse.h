@@ -15,4 +15,4 @@ class Horse {
 		void printLane();
 		bool isWinner();
 
-}
+};

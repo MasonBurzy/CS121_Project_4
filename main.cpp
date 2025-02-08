@@ -1,9 +1,9 @@
 // main //
 
 #include <iostream>
+#include "horse.h"
 
 /*
-#include "horse.h"
 #include "race.h"
 */
 
