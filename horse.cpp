@@ -15,7 +15,7 @@ void advance(int HorseNum, int horses[]) {
 
 
 void printLane(int HorseNum, int horses[]) {
-	for (int hn = 0; hn < TrackLength; hn++) {
+	for (int hn = 0; hn < trackLength; hn++) {
 		if(hn == horses[HorseNum]) {
 			std::cout << " {hn}" << std::endl;
 		} // end if 
@@ -32,9 +32,9 @@ void printLane(int HorseNum, int horses[]) {
 
 bool isWinner(int HorseNum, int horses[]) {
 bool result = false;
-	if (horses[HorseNum] == TrackLength) {
+	if (horses[HorseNum] == trackLength) {
 			result = true;
-			std::cout << "Horse" {hn} "won!" << std::endl;
+			std::cout << "Horse" +  {hn} +  "won!" << std::endl;
 	} // end if
 	return result;
 
