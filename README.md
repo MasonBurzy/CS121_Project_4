@@ -1,7 +1,7 @@
 # CS121-Project-4
 
 ```
-Made a UML
+Made a UML for algorithm
 ```
 
 
