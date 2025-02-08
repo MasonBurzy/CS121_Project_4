@@ -1,8 +1,8 @@
 #include <iostream>
 
-int position
-int index = 0
-int trackLength
+int position;
+int index = 0;
+int trackLength;
 
 init(int id, int trackLength);
 
