@@ -1,7 +1,8 @@
 #include <iostream>
+#include "horse.h"
 
 int position;
-int index = 0;
+int id;
 int trackLength;
 
 init(int id, int trackLength);
