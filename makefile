@@ -1,5 +1,5 @@
-COMPILER = g++
-OBJS = horse.cpp race.cpp main.cpp
-default: testcase
-testcase: $(OBJS)
-	$(COMPILER) -o file1 $(OBJS)
+horseRace: main.cpp
+	g++ -g main.cpp -o horseRace
+
+run: horseRace
+	./horseRace
