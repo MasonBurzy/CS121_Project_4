@@ -1,5 +1,60 @@
 #include <iostream>
+#include <random>
 #include "horse.h"
+
+std::random_device rd;
+std::uniform_int_distribution<int> dist(0, 1);
+
+Horse::Horse(){
+	Horse::index = 0;
+	Horse::trackLength = 0;
+	Horse::position = 0;
+}
+
+
+void Horse::init(int id, int trackLength){
+	Horse::index = id;
+	Horse::trackLength = trackLength;
+	Horse::position = 0;
+}
+
+void Horse::advance() {
+	return;
+}
+
+
+void Horse::printLane(){
+	for(int hn = 0; hn < Horse::trackLength; hn++) {
+		if(hn == Horse::position) {
+			std::cout << " {hn}" <<std::endl;
+		} // end if
+
+		else {
+			std::cout << "." << std::endl;
+		} // end else
+	
+	} // end for
+
+} // end printLane
+
+
+bool Horse::isWinner() {
+bool result = false;
+	if (Horse::position >= Horse::trackLength) {
+		result = true;
+		std::cout << "Horse " << Horse::position << " won!" << std::endl;
+	} // end if
+
+	return result;
+
+} // end isWinner
+
+
+
+
+/// Original Code ///
+
+/*
 
 int position;
 int id;
@@ -39,3 +94,5 @@ bool result = false;
 	return result;
 
 } // end isWinner
+
+*/
